@@ -19,7 +19,7 @@ function App() {
 			<div>
 				<Header></Header>
 			</div>
-			<div className="main-content">
+			<div>
 				<div className="row">
 					<div className="col-md-3 col-sm-4">
 						<Card product={product} />

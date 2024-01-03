@@ -1,8 +1,9 @@
 import React from 'react';
+import styles from './Header.module.css';
 
 const Header: React.FC = () => {
 	return (
-		<header className="header">
+		<header className={styles.header}>
 			<h1>Singular Boutique</h1>
 		</header>
 	);
