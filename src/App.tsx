@@ -10,13 +10,14 @@ function App() {
 		description: 'Product 1',
 		price: '100.00',
 		stars: 4,
+		category: 'teste',
 		imageUrl: 'https://encurtador.com.br/oqtIN'
 	};
 
 	return (
 		<>
 			<div>
-				<Header title="t"></Header>
+				<Header></Header>
 			</div>
 			<div className="main-content">
 				<div className="row">
