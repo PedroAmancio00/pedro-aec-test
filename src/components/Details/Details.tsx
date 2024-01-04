@@ -1,21 +1,25 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Product } from '../../interfaces/Product.interface';
-import styles from './Card.module.css';
+import styles from './Details.module.css';
 import Button from '../Button/Button';
 import Star from '../../assets/star.png';
-import Details from '../Details/Details';
 
-interface CardProps {
+interface DetailsProps {
 	product: Product;
+	onClose: () => void;
 }
 
-const Card: React.FC<CardProps> = ({ product }) => {
-	const [mostrarComponente, setMostrarComponente] = useState(false);
+const Details: React.FC<DetailsProps> = ({ product, onClose }) => {
 	const images = Array(product.stars).fill(null);
 
 	return (
-		<div>
+		<div className={styles.modal}>
 			<div className={styles.card}>
+				<div>
+					<span className={styles.closeButton} onClick={onClose}>
+						&times;
+					</span>
+				</div>
 				<img src={product.imageUrl} className={styles.cardImg} />
 				<div>
 					<h3>Nome: {product.name}</h3>
@@ -27,14 +31,11 @@ const Card: React.FC<CardProps> = ({ product }) => {
 							<img key={index} src={Star} className={styles.star} />
 						))}
 					</h5>
-					<div>
-						<Button text="Ver Detalhes" onClick={() => setMostrarComponente(true)}></Button>
-						{mostrarComponente && <Details product={product} onClose={() => setMostrarComponente(false)} />}
-					</div>
+					<h3>Detalhes: {product.description}</h3>
 				</div>
 			</div>
 		</div>
 	);
 };
 
-export default Card;
+export default Details;
