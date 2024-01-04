@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Product } from '../../interfaces/Product.interface';
+import { useProductDetails } from '../../hooks/useProductDetails';
 import styles from './Card.module.css';
 import Button from '../Button/Button';
 import Star from '../../assets/star.png';
@@ -10,7 +11,7 @@ interface CardProps {
 }
 
 const Card: React.FC<CardProps> = ({ product }) => {
-	const [mostrarComponente, setMostrarComponente] = useState(false);
+	const { showComponents, setShowComponents } = useProductDetails();
 	const images = Array(product.stars).fill(null);
 
 	return (
@@ -28,8 +29,8 @@ const Card: React.FC<CardProps> = ({ product }) => {
 						))}
 					</h5>
 					<div>
-						<Button text="Ver Detalhes" onClick={() => setMostrarComponente(true)}></Button>
-						{mostrarComponente && <Details product={product} onClose={() => setMostrarComponente(false)} />}
+						<Button text="Ver Detalhes" onClick={() => setShowComponents(true)}></Button>
+						{showComponents && <Details product={product} onClose={() => setShowComponents(false)} />}
 					</div>
 				</div>
 			</div>

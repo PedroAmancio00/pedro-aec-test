@@ -1,15 +1,13 @@
 import React, { useState, ChangeEvent, FormEvent } from 'react';
 import { Button, Form, InputGroup, FormControl } from 'react-bootstrap';
 import styles from './SearchBar.module.css';
+import { useFilters } from '../../hooks/UseFilters';
 
-interface SearchBarProps {
-	onSearch: (searchTerm: string, checkboxValues: string[]) => void;
-}
-
-const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
+const SearchBar: React.FC = () => {
 	const [searchTerm, setSearchTerm] = useState<string>('');
 	const [showCheckboxes, setShowCheckboxes] = useState(false);
 	const [checkboxSelections, setCheckboxSelections] = useState<{ [key: string]: boolean }>({});
+	const { setNameFilter, setCategoryFilters } = useFilters();
 
 	const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
 		setSearchTerm(event.target.value);
@@ -17,10 +15,8 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
 
 	const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
 		event.preventDefault();
-		onSearch(
-			searchTerm,
-			Object.keys(checkboxSelections).filter((key) => checkboxSelections[key])
-		);
+		setNameFilter(searchTerm);
+		setCategoryFilters(Object.keys(checkboxSelections).filter((key) => checkboxSelections[key]));
 	};
 
 	const toggleCheckboxes = () => {
