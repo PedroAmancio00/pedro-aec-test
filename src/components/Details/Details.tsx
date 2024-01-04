@@ -1,7 +1,6 @@
 import React from 'react';
 import { Product } from '../../interfaces/Product.interface';
 import styles from './Details.module.css';
-import Button from '../Button/Button';
 import Star from '../../assets/star.png';
 
 interface DetailsProps {

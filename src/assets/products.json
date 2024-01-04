@@ -11,30 +11,30 @@
 		},
 		{
 			"id": 2,
-			"name": "teste",
-			"description": "Product 1",
-			"price": "100.00",
+			"name": "Blusa",
+			"description": "Blusa Feminina",
+			"price": "125.00",
 			"stars": 3,
-			"category": "teste",
-			"imageUrl": "https://encurtador.com.br/oqtIN"
+			"category": "Roupas",
+			"imageUrl": "https://encurtador.com.br/rGL29"
 		},
 		{
 			"id": 3,
-			"name": "teste",
-			"description": "Product 1",
-			"price": "100.00",
+			"name": "Casaco",
+			"description": "Casaco Feminino",
+			"price": "227.00",
 			"stars": 5,
-			"category": "teste",
-			"imageUrl": "https://encurtador.com.br/oqtIN"
+			"category": "Roupas",
+			"imageUrl": "https://encurtador.com.br/dmsyG"
 		},
 		{
 			"id": 4,
-			"name": "teste",
-			"description": "Product 1",
+			"name": "Fedora",
+			"description": "Fedora branco",
 			"price": "100.00",
 			"stars": 2,
-			"category": "teste",
-			"imageUrl": "https://encurtador.com.br/oqtIN"
+			"category": "Chapéus",
+			"imageUrl": "https://encurtador.com.br/CHMW5"
 		},
 		{
 			"id": 5,
@@ -47,12 +47,12 @@
 		},
 		{
 			"id": 6,
-			"name": "teste",
-			"description": "Product 1",
-			"price": "100.00",
+			"name": "Chapéu",
+			"description": "Chapéu de praia",
+			"price": "25.15",
 			"stars": 3,
-			"category": "teste",
-			"imageUrl": "https://encurtador.com.br/oqtIN"
+			"category": "Chapéus",
+			"imageUrl": "https://encurtador.com.br/dtzI5"
 		},
 		{
 			"id": 7,
@@ -65,12 +65,12 @@
 		},
 		{
 			"id": 8,
-			"name": "teste",
-			"description": "Product 1",
-			"price": "100.00",
+			"name": "Boné",
+			"description": "Boné branco",
+			"price": "78.25",
 			"stars": 5,
-			"category": "teste",
-			"imageUrl": "https://encurtador.com.br/oqtIN"
+			"category": "Chapéus",
+			"imageUrl": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=1336&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 		},
 		{
 			"id": 9,
@@ -83,102 +83,12 @@
 		},
 		{
 			"id": 10,
-			"name": "teste",
-			"description": "Product 1",
-			"price": "100.00",
+			"name": "Jaqueta",
+			"description": "Jaqueta marrom",
+			"price": "115.00",
 			"stars": 2,
-			"category": "teste",
-			"imageUrl": "https://encurtador.com.br/oqtIN"
-		},
-		{
-			"id": 11,
-			"name": "teste",
-			"description": "Product 1",
-			"price": "100.00",
-			"stars": 5,
-			"category": "teste",
-			"imageUrl": "https://encurtador.com.br/oqtIN"
-		},
-		{
-			"id": 12,
-			"name": "teste",
-			"description": "Product 1",
-			"price": "100.00",
-			"stars": 4,
-			"category": "teste",
-			"imageUrl": "https://encurtador.com.br/oqtIN"
-		},
-		{
-			"id": 13,
-			"name": "teste",
-			"description": "Product 1",
-			"price": "100.00",
-			"stars": 3,
-			"category": "teste",
-			"imageUrl": "https://encurtador.com.br/oqtIN"
-		},
-		{
-			"id": 14,
-			"name": "teste",
-			"description": "Product 1",
-			"price": "100.00",
-			"stars": 5,
-			"category": "teste",
-			"imageUrl": "https://encurtador.com.br/oqtIN"
-		},
-		{
-			"id": 15,
-			"name": "teste",
-			"description": "Product 1",
-			"price": "100.00",
-			"stars": 3,
-			"category": "teste",
-			"imageUrl": "https://encurtador.com.br/oqtIN"
-		},
-		{
-			"id": 16,
-			"name": "teste",
-			"description": "Product 1",
-			"price": "100.00",
-			"stars": 5,
-			"category": "teste",
-			"imageUrl": "https://encurtador.com.br/oqtIN"
-		},
-		{
-			"id": 17,
-			"name": "teste",
-			"description": "Product 1",
-			"price": "100.00",
-			"stars": 5,
-			"category": "teste",
-			"imageUrl": "https://encurtador.com.br/oqtIN"
-		},
-		{
-			"id": 18,
-			"name": "teste",
-			"description": "Product 1",
-			"price": "100.00",
-			"stars": 4,
-			"category": "teste",
-			"imageUrl": "https://encurtador.com.br/oqtIN"
-		},
-		{
-			"id": 19,
-			"name": "teste",
-			"description": "Product 1",
-			"price": "100.00",
-			"stars": 1,
-			"category": "teste",
-			"imageUrl": "https://encurtador.com.br/oqtIN"
-		},
-		{
-			"id": 20,
-			"name": "teste",
-			"description": "Product 1",
-			"price": "100.00",
-			"stars": 3,
-			"category": "teste",
-			"imageUrl": "https://encurtador.com.br/oqtIN"
+			"category": "Roupas",
+			"imageUrl": "https://encurtador.com.br/DTVY3"
 		}
 	]
 }
