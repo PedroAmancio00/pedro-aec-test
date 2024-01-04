@@ -56,7 +56,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
 							checked={checkboxSelections['Sapatos'] || false}
 							onChange={handleCheckboxChange}
 						/>
-						Sapatos
+						&nbsp; Sapatos
 					</label>
 					<label>
 						<input
@@ -65,7 +65,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
 							checked={checkboxSelections['Roupas'] || false}
 							onChange={handleCheckboxChange}
 						/>
-						Roupas
+						&nbsp; Roupas
 					</label>
 					<label>
 						<input
@@ -74,7 +74,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
 							checked={checkboxSelections['Chapéus'] || false}
 							onChange={handleCheckboxChange}
 						/>
-						Chapéus
+						&nbsp; Chapéus
 					</label>
 				</div>
 			)}
