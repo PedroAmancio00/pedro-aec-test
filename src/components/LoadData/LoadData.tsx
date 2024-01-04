@@ -10,7 +10,6 @@ type LoadDataProps = {
 
 function filterData(data: Product[], nameFilter: string, categoryFilters: string[]) {
 	return data.filter((item) => {
-		console.log(item);
 		const matchesName = nameFilter ? item.name.toLowerCase().includes(nameFilter.toLowerCase()) : true;
 
 		const matchesCategory =
