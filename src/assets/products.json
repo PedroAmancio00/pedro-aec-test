@@ -1,0 +1,184 @@
+{
+	"items": [
+		{
+			"id": 1,
+			"name": "Bota",
+			"description": "Bota de couro",
+			"price": "150.00",
+			"stars": 4,
+			"category": "Calçados",
+			"imageUrl": "https://encurtador.com.br/oqtIN"
+		},
+		{
+			"id": 2,
+			"name": "teste",
+			"description": "Product 1",
+			"price": "100.00",
+			"stars": 3,
+			"category": "teste",
+			"imageUrl": "https://encurtador.com.br/oqtIN"
+		},
+		{
+			"id": 3,
+			"name": "teste",
+			"description": "Product 1",
+			"price": "100.00",
+			"stars": 5,
+			"category": "teste",
+			"imageUrl": "https://encurtador.com.br/oqtIN"
+		},
+		{
+			"id": 4,
+			"name": "teste",
+			"description": "Product 1",
+			"price": "100.00",
+			"stars": 2,
+			"category": "teste",
+			"imageUrl": "https://encurtador.com.br/oqtIN"
+		},
+		{
+			"id": 5,
+			"name": "Nike",
+			"description": "Nike Vermelho",
+			"price": "50.20",
+			"stars": 4,
+			"category": "Calçados",
+			"imageUrl": "https://encurtador.com.br/dzFOX"
+		},
+		{
+			"id": 6,
+			"name": "teste",
+			"description": "Product 1",
+			"price": "100.00",
+			"stars": 3,
+			"category": "teste",
+			"imageUrl": "https://encurtador.com.br/oqtIN"
+		},
+		{
+			"id": 7,
+			"name": "All Star",
+			"description": "All Star Vermelho",
+			"price": "70.25",
+			"stars": 5,
+			"category": "Calçados",
+			"imageUrl": "https://encurtador.com.br/ltGR8"
+		},
+		{
+			"id": 8,
+			"name": "teste",
+			"description": "Product 1",
+			"price": "100.00",
+			"stars": 5,
+			"category": "teste",
+			"imageUrl": "https://encurtador.com.br/oqtIN"
+		},
+		{
+			"id": 9,
+			"name": "Salto",
+			"description": "Salto alto",
+			"price": "100.00",
+			"stars": 3,
+			"category": "Calçados",
+			"imageUrl": "https://encurtador.com.br/esuKZ"
+		},
+		{
+			"id": 10,
+			"name": "teste",
+			"description": "Product 1",
+			"price": "100.00",
+			"stars": 2,
+			"category": "teste",
+			"imageUrl": "https://encurtador.com.br/oqtIN"
+		},
+		{
+			"id": 11,
+			"name": "teste",
+			"description": "Product 1",
+			"price": "100.00",
+			"stars": 5,
+			"category": "teste",
+			"imageUrl": "https://encurtador.com.br/oqtIN"
+		},
+		{
+			"id": 12,
+			"name": "teste",
+			"description": "Product 1",
+			"price": "100.00",
+			"stars": 4,
+			"category": "teste",
+			"imageUrl": "https://encurtador.com.br/oqtIN"
+		},
+		{
+			"id": 13,
+			"name": "teste",
+			"description": "Product 1",
+			"price": "100.00",
+			"stars": 3,
+			"category": "teste",
+			"imageUrl": "https://encurtador.com.br/oqtIN"
+		},
+		{
+			"id": 14,
+			"name": "teste",
+			"description": "Product 1",
+			"price": "100.00",
+			"stars": 5,
+			"category": "teste",
+			"imageUrl": "https://encurtador.com.br/oqtIN"
+		},
+		{
+			"id": 15,
+			"name": "teste",
+			"description": "Product 1",
+			"price": "100.00",
+			"stars": 3,
+			"category": "teste",
+			"imageUrl": "https://encurtador.com.br/oqtIN"
+		},
+		{
+			"id": 16,
+			"name": "teste",
+			"description": "Product 1",
+			"price": "100.00",
+			"stars": 5,
+			"category": "teste",
+			"imageUrl": "https://encurtador.com.br/oqtIN"
+		},
+		{
+			"id": 17,
+			"name": "teste",
+			"description": "Product 1",
+			"price": "100.00",
+			"stars": 5,
+			"category": "teste",
+			"imageUrl": "https://encurtador.com.br/oqtIN"
+		},
+		{
+			"id": 18,
+			"name": "teste",
+			"description": "Product 1",
+			"price": "100.00",
+			"stars": 4,
+			"category": "teste",
+			"imageUrl": "https://encurtador.com.br/oqtIN"
+		},
+		{
+			"id": 19,
+			"name": "teste",
+			"description": "Product 1",
+			"price": "100.00",
+			"stars": 1,
+			"category": "teste",
+			"imageUrl": "https://encurtador.com.br/oqtIN"
+		},
+		{
+			"id": 20,
+			"name": "teste",
+			"description": "Product 1",
+			"price": "100.00",
+			"stars": 3,
+			"category": "teste",
+			"imageUrl": "https://encurtador.com.br/oqtIN"
+		}
+	]
+}

@@ -1,57 +1,26 @@
 import Header from './components/Header/Header.tsx';
 import './App.css';
 import Card from './components/Card/Card.tsx';
-import { Product } from './interfaces/Product.interface.ts';
+import LoadData from './components/LoadData/LoadData.tsx';
 
 function App() {
-	const product: Product = {
-		id: 1,
-		name: 'teste',
-		description: 'Product 1',
-		price: '100.00',
-		stars: 4,
-		category: 'teste',
-		imageUrl: 'https://encurtador.com.br/oqtIN'
-	};
-
 	return (
 		<>
 			<div>
 				<Header></Header>
 			</div>
 			<div>
-				<div className="row">
-					<div className="col-md-3 col-sm-4">
-						<Card product={product} />
-					</div>
-					<div className="col-md-3 col-sm-4">
-						<Card product={product} />
-					</div>
-					<div className="col-md-3 col-sm-4">
-						<Card product={product} />
-					</div>
-					<div className="col-md-3">
-						<Card product={product} />
-					</div>
-					<div className="col-md-3">
-						<Card product={product} />
-					</div>
-					<div className="col-md-3">
-						<Card product={product} />
-					</div>
-					<div className="col-md-3">
-						<Card product={product} />
-					</div>
-					<div className="col-md-3">
-						<Card product={product} />
-					</div>
-					<div className="col-md-3">
-						<Card product={product} />
-					</div>
-					<div className="col-md-3">
-						<Card product={product} />
-					</div>
-				</div>
+				<LoadData
+					render={(items) => (
+						<div className="row">
+							{items.map((item) => (
+								<div key={item.id} className="col-md-3 col-sm-4">
+									<Card product={item} />
+								</div>
+							))}
+						</div>
+					)}
+				/>
 			</div>
 		</>
 	);
