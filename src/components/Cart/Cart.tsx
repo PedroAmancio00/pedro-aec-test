@@ -11,8 +11,7 @@ const Cart: React.FC = () => {
 		for (let i = 0; i < cartItems.length; i++) {
 			total += cartItems[i].total * Number(cartItems[i].price);
 		}
-		total.toFixed(2);
-		return total;
+		return total.toFixed(2);
 	};
 
 	const multiplyValues = (item: CartItems) => {
