@@ -78,45 +78,35 @@
 	color: white;
 }
 
-@media screen and (max-width: 700px) {
-	.modal h3 {
-		font-size: 20px;
-	}
-	.modal h2 {
-		font-size: 25px;
-	}
+.modal h3 {
+	font-size: 1.5rem;
+}
+.modal h2 {
+	font-size: 2rem;
+}
+
+.button {
+	width: 1.5rem;
+	height: 1.5rem;
+	line-height: 1rem;
+}
+
+.button:hover {
+	background-color: grey;
 }
 
 @media screen and (max-width: 600px) {
 	.modal h3 {
-		font-size: 18px;
+		font-size: 1rem;
 	}
 	.modal h2 {
-		font-size: 23px;
-	}
-	.button {
-		width: 18px;
-		height: 18px;
-		line-height: 12px;
-	}
-
-	.button:hover {
-		background-color: grey;
-	}
-}
-
-@media screen and (max-width: 500px) {
-	.modal h3 {
-		font-size: 15px;
-	}
-	.modal h2 {
-		font-size: 20px;
+		font-size: 1.3rem;
 	}
 
 	.button {
-		width: 18px;
-		height: 18px;
-		line-height: 12px;
+		width: 1rem;
+		height: 1rem;
+		line-height: 0.75rem;
 	}
 
 	.button:hover {
