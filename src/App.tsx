@@ -3,7 +3,7 @@ import './App.css';
 import Card from './components/Card/Card.tsx';
 import LoadData from './components/LoadData/LoadData.tsx';
 import { FilterProvider } from './contexts/FilterContext.tsx';
-import { ProductDetailsProvider } from './contexts/ProductDetails.tsx';
+import { ProductDetailsProvider } from './contexts/ProductDetailsContext.tsx';
 
 function App() {
 	return (

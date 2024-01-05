@@ -1,17 +1,23 @@
 import React from 'react';
 import { Product } from '../../interfaces/Product.interface';
-import { useProductDetails } from '../../hooks/useProductDetails';
 import styles from './Card.module.css';
 import Button from '../Button/Button';
 import Star from '../../assets/star.png';
 import Details from '../Details/Details';
+import { useProductDetails } from '../../hooks/UseProductDetails';
 
 interface CardProps {
 	product: Product;
 }
 
 const Card: React.FC<CardProps> = ({ product }) => {
-	const { showComponents, setShowComponents } = useProductDetails();
+	const { setProductDetail, showComponent, setShowComponent } = useProductDetails();
+
+	const handleSeeDetails = () => {
+		setProductDetail(product);
+		setShowComponent(true);
+	};
+
 	const images = Array(product.stars).fill(null);
 
 	return (
@@ -29,8 +35,8 @@ const Card: React.FC<CardProps> = ({ product }) => {
 						))}
 					</h5>
 					<div>
-						<Button text="Ver Detalhes" onClick={() => setShowComponents(true)}></Button>
-						{showComponents && <Details product={product} onClose={() => setShowComponents(false)} />}
+						<Button text="Ver Detalhes" onClick={() => handleSeeDetails()}></Button>
+						{showComponent && <Details />}
 					</div>
 				</div>
 			</div>
