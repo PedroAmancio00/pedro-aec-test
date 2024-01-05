@@ -1,10 +1,11 @@
 import React from 'react';
 import { Product } from '../../interfaces/Product.interface';
 import styles from './Card.module.css';
-import Button from '../Button/Button';
 import Star from '../../assets/star.png';
 import Details from '../Details/Details';
 import { useProductDetails } from '../../hooks/UseProductDetails';
+import { Button } from 'react-bootstrap';
+import { useCart } from '../../hooks/UseCart';
 
 interface CardProps {
 	product: Product;
@@ -12,10 +13,15 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ product }) => {
 	const { setProductDetail, showComponent, setShowComponent } = useProductDetails();
+	const { totalCart, setTotalCart } = useCart();
 
 	const handleSeeDetails = () => {
 		setProductDetail(product);
 		setShowComponent(true);
+	};
+
+	const handleSetTotalCart = () => {
+		setTotalCart(totalCart + 1);
 	};
 
 	const images = Array(product.stars).fill(null);
@@ -35,8 +41,13 @@ const Card: React.FC<CardProps> = ({ product }) => {
 						))}
 					</h5>
 					<div>
-						<Button text="Ver Detalhes" onClick={() => handleSeeDetails()}></Button>
+						<Button onClick={() => handleSeeDetails()} variant="outline-secondary" className={styles.details}>
+							Ver Detalhes
+						</Button>
 						{showComponent && <Details />}
+						<Button variant="outline-secondary" onClick={() => handleSetTotalCart()}>
+							Adicionar ao carrinho
+						</Button>
 					</div>
 				</div>
 			</div>

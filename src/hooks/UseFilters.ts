@@ -1,4 +1,3 @@
-// src/hooks/useFilters.ts
 import { useContext } from 'react';
 import { FilterContext, FilterContextState } from '../contexts/FilterContext';
 

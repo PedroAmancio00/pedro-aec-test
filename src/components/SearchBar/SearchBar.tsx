@@ -37,7 +37,13 @@ const SearchBar: React.FC = () => {
 					<Button variant="outline-secondary" onClick={toggleCheckboxes} className={styles.inputGroupButton}>
 						Categorias
 					</Button>
-					<FormControl type="text" placeholder="Digite sua busca" value={searchTerm} onChange={handleInputChange} />
+					<FormControl
+						type="text"
+						placeholder="Digite sua busca"
+						value={searchTerm}
+						onChange={handleInputChange}
+						className={styles.inputGroupButton}
+					/>
 					<Button type="submit" variant="primary">
 						Buscar
 					</Button>
