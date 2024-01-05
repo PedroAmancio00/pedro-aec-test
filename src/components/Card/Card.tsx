@@ -13,15 +13,28 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ product }) => {
 	const { setProductDetail, showComponent, setShowComponent } = useProductDetails();
-	const { totalCart, setTotalCart } = useCart();
+	const { totalCart, cartItems, setTotalCart, setCartItems } = useCart();
 
 	const handleSeeDetails = () => {
 		setProductDetail(product);
 		setShowComponent(true);
 	};
 
-	const handleSetTotalCart = () => {
+	const handleSetTotalCart = (product: Product) => {
 		setTotalCart(totalCart + 1);
+		if (cartItems.length === 0) {
+			setCartItems([...cartItems, { id: product.id, total: 1, name: product.name, price: product.price }]);
+		}
+		if (cartItems.length > 0) {
+			const index = cartItems.findIndex((item) => item.id === product.id);
+			if (index === -1) {
+				setCartItems([...cartItems, { id: product.id, total: 1, name: product.name, price: product.price }]);
+			} else {
+				const newCartItems = [...cartItems];
+				newCartItems[index].total += 1;
+				setCartItems(newCartItems);
+			}
+		}
 	};
 
 	const images = Array(product.stars).fill(null);
@@ -45,7 +58,7 @@ const Card: React.FC<CardProps> = ({ product }) => {
 							Ver Detalhes
 						</Button>
 						{showComponent && <Details />}
-						<Button variant="outline-secondary" onClick={() => handleSetTotalCart()}>
+						<Button variant="outline-secondary" onClick={() => handleSetTotalCart(product)}>
 							Adicionar ao carrinho
 						</Button>
 					</div>
