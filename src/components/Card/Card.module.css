@@ -20,3 +20,25 @@
 .details {
 	margin-right: 10px;
 }
+
+.buttonLeft,
+.button {
+	padding: 0.5rem;
+	border-radius: 5px;
+	border-width: 1px;
+	background-color: #d4d3d1;
+	color: black;
+}
+
+.buttonLeft:hover,
+.button:hover {
+	padding: 0.5rem;
+	border-radius: 5px;
+	border-width: 1px;
+	background-color: grey;
+	color: white;
+}
+
+.buttonLeft {
+	margin-right: 5px;
+}

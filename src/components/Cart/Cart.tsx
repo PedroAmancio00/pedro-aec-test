@@ -1,5 +1,4 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
 import { useCart } from '../../hooks/UseCart';
 import styles from './Cart.module.css';
 import { CartItems } from '../../interfaces/CartItems.interface';
@@ -24,7 +23,7 @@ const Cart: React.FC = () => {
 	const handleSetCartItems = (item: CartItems, add: boolean) => {
 		const index = cartItems.findIndex((cartItem) => cartItem.id === item.id);
 		const newCartItems = [...cartItems];
-		let total = totalCart;
+		let total = Number(totalCart);
 		if (add) {
 			newCartItems[index].total += 1;
 			total += 1;
@@ -36,14 +35,14 @@ const Cart: React.FC = () => {
 			newCartItems.splice(index, 1);
 		}
 		setCartItems(newCartItems);
-		setTotalCart(total);
+		setTotalCart(total.toFixed(2));
 	};
 
 	return (
 		<div>
-			<Button variant="outline-secondary" onClick={() => setShowComponent(true)}>
+			<button onClick={() => setShowComponent(true)} className={styles.cartButton}>
 				Carrinho: {totalCart}
-			</Button>
+			</button>
 			{showComponent && (
 				<div className={styles.modal}>
 					<div className={styles.card}>

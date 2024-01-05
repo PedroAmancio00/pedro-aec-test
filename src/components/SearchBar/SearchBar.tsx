@@ -1,5 +1,5 @@
 import React, { useState, ChangeEvent, FormEvent } from 'react';
-import { Button, Form, InputGroup, FormControl } from 'react-bootstrap';
+import { Form, InputGroup, FormControl } from 'react-bootstrap';
 import styles from './SearchBar.module.css';
 import { useFilters } from '../../hooks/UseFilters';
 
@@ -34,9 +34,9 @@ const SearchBar: React.FC = () => {
 		<div>
 			<Form onSubmit={handleSubmit} className={styles.formContainer}>
 				<InputGroup>
-					<Button variant="outline-secondary" onClick={toggleCheckboxes} className={styles.inputGroupButton}>
+					<button onClick={toggleCheckboxes} className={styles.buttonLeft}>
 						Categorias
-					</Button>
+					</button>
 					<FormControl
 						type="text"
 						placeholder="Digite sua busca"
@@ -44,9 +44,9 @@ const SearchBar: React.FC = () => {
 						onChange={handleInputChange}
 						className={styles.inputGroupButton}
 					/>
-					<Button type="submit" variant="primary">
+					<button type="submit" className={styles.buttonRight}>
 						Buscar
-					</Button>
+					</button>
 				</InputGroup>
 			</Form>
 			{showCheckboxes && (

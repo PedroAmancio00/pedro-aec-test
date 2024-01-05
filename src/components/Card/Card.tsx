@@ -4,7 +4,6 @@ import styles from './Card.module.css';
 import Star from '../../assets/star.png';
 import Details from '../Details/Details';
 import { useProductDetails } from '../../hooks/UseProductDetails';
-import { Button } from 'react-bootstrap';
 import { useCart } from '../../hooks/UseCart';
 
 interface CardProps {
@@ -21,7 +20,8 @@ const Card: React.FC<CardProps> = ({ product }) => {
 	};
 
 	const handleSetTotalCart = (product: Product) => {
-		setTotalCart(totalCart + 1);
+		const totalCartNumber = Number(totalCart);
+		setTotalCart(String(totalCartNumber + 1));
 		if (cartItems.length === 0) {
 			setCartItems([...cartItems, { id: product.id, total: 1, name: product.name, price: product.price }]);
 		}
@@ -54,13 +54,13 @@ const Card: React.FC<CardProps> = ({ product }) => {
 						))}
 					</h5>
 					<div>
-						<Button onClick={() => handleSeeDetails()} variant="outline-secondary" className={styles.details}>
+						<button onClick={() => handleSeeDetails()} className={styles.buttonLeft}>
 							Ver Detalhes
-						</Button>
+						</button>
 						{showComponent && <Details />}
-						<Button variant="outline-secondary" onClick={() => handleSetTotalCart(product)}>
+						<button onClick={() => handleSetTotalCart(product)} className={styles.button}>
 							Adicionar ao carrinho
-						</Button>
+						</button>
 					</div>
 				</div>
 			</div>

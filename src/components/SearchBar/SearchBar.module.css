@@ -2,8 +2,30 @@
 	margin-bottom: 10px;
 }
 
-.inputGroupButton {
-	margin-right: 6px;
+.buttonLeft,
+.buttonRight {
+	padding: 0.5rem;
+	border-radius: 5px;
+	border-width: 1px;
+	background-color: #d4d3d1;
+	color: black;
+}
+
+.buttonLeft:hover,
+.buttonRight:hover {
+	padding: 0.5rem;
+	border-radius: 5px;
+	border-width: 1px;
+	background-color: grey;
+	color: white;
+}
+
+.buttonLeft {
+	margin-right: 7px;
+}
+
+.buttonRight {
+	margin-left: 7px !important;
 }
 
 .checkboxContainer {
